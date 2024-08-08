@@ -16,6 +16,9 @@ touch cogs/games.py
 touch cogs/youtube.py
 touch cogs/projects.py
 touch cogs/challenges.py
+touch cogs/quotes.py
+touch cogs/memes.py
+touvh cogs/articles.py
 
 # Create data files
 touch data/preferences.db
