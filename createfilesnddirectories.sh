@@ -26,10 +26,12 @@ touch data/never_have_i_ever.json
 touch data/truth_or_dare.json
 touch data/would_you_rather.json
 touch data/responses.json
+touch data/motivational_quotes.json
 
 # Create utility files
 touch utils/__init__.py
 touch utils/youtube_api.py
+touch utils/meme_api.py
 
 # completion message
 echo "Project structure for 'shaheen' created successfully."
