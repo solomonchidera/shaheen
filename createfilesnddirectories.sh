@@ -9,7 +9,6 @@ mkdir -p utils
 touch bot.py
 touch config.py
 touch requirements.txt
-touch README.md
 
 # Create cog files
 touch cogs/__init__.py
