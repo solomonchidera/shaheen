@@ -1,0 +1,18 @@
+{
+    "Questions" : [
+        "Never have I ever broken production.",
+        "Never have I ever merged without waiting for tests to pass.",
+        "I have never rewritten my code so they circumvent the tests.",
+        "Never have I ever questioned if the test is actually useful.",
+        "Never have I ever commited without testing hoping it will just work fine.",
+        "Never have I ever closed a ticket without completely finishing everything because the last requirement was unlikely to see the light of day.",
+        "Never have I ever left an unfinished project on my GitHub with a mental “promise” to finish it some other day.",
+        "Never have I ever used a Jetbrains product for more than a week.",
+        "Never have I ever committed a private key by accident.",
+        "Never have I ever wrote a SQL query.",
+        "Never have I ever learned different technologies at the same time.",
+        "Never have I ever wrote a tutorial post.",
+        "Never have I ever used AWS."
+    ]
+
+}
