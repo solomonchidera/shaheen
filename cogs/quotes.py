@@ -1,0 +1,1 @@
+"""defines commands for the qoutes functionality"""
