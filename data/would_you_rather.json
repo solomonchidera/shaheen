@@ -1,0 +1,54 @@
+{
+    "Questions" :[
+          {
+            "question": "Would you rather always write code in a language you dislike or have to fix someone else's badly written code?",
+            "option1": "Write code in a language you dislike",
+            "option2": "Fix someone else's badly written code"
+          },
+          {
+            "question": "Would you rather work with a buggy legacy codebase or a poorly documented but new codebase?",
+            "option1": "Buggy legacy codebase",
+            "option2": "Poorly documented new codebase"
+          },
+          {
+            "question": "Would you rather debug code for hours without finding the issue or accidentally delete a day’s worth of work?",
+            "option1": "Debug code for hours",
+            "option2": "Accidentally delete a day's work"
+          },
+          {
+            "question": "Would you rather have no internet connection while coding or no access to Stack Overflow?",
+            "option1": "No internet connection",
+            "option2": "No access to Stack Overflow"
+          },
+          {
+            "question": "Would you rather code in a language with no syntax highlighting or one with an unpredictable linter?",
+            "option1": "No syntax highlighting",
+            "option2": "Unpredictable linter"
+          },
+          {
+            "question": "Would you rather work on a project with no version control or a project with frequent merge conflicts?",
+            "option1": "No version control",
+            "option2": "Frequent merge conflicts"
+          },
+          {
+            "question": "Would you rather have to explain your code to a non-technical person or explain a bug to your boss?",
+            "option1": "Explain code to a non-technical person",
+            "option2": "Explain a bug to your boss"
+          },
+          {
+            "question": "Would you rather deal with a production issue during a live demo or have your code fail right before a major deadline?",
+            "option1": "Production issue during live demo",
+            "option2": "Code fail right before major deadline"
+          },
+          {
+            "question": "Would you rather have an IDE that crashes frequently or one that auto-corrects your code incorrectly?",
+            "option1": "IDE that crashes frequently",
+            "option2": "IDE that auto-corrects incorrectly"
+          },
+          {
+            "question": "Would you rather code with a noisy mechanical keyboard or a slow, unresponsive one?",
+            "option1": "Noisy mechanical keyboard",
+            "option2": "Slow, unresponsive keyboard"
+          }
+    ]
+}

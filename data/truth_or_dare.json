@@ -1,0 +1,27 @@
+{
+    "truth" : [
+        "What is the worst bug you've ever introduced into production, and how did you fix it?",
+        "Have you ever lied on your resume about your programming skills or experience? If so, what was it?",
+        "What programming language do you secretly dislike but never admit publicly?",
+        "What's the most embarrassing code comment you've ever written or seen in a codebase?",
+        "Have you ever pushed code to production without testing it first? What happened?",
+        "Have you ever copied code from Stack Overflow without fully understanding it? How did it work out?",
+        "What's the longest you've gone without fixing a critical bug you were responsible for?",
+        "Have you ever taken credit for someone else's work on a coding project?",
+        "What's the biggest shortcut you've taken in coding to meet a deadline?",
+        "Have you ever pretended to know a programming concept or tool that you actually didn't?"
+    ],
+    
+    "dare" : [
+        "Refactor a piece of your code without using the backspace or delete keys for 10 minutes.",
+        "Write a “hello world” program in the most obscure programming language you know.",
+        "Code something with your non-dominant hand for 5 minutes.",
+        "Deploy a fake [all systems down] message to your team chat and see their reaction.",
+        "Write a short piece of code using only single-letter variable names.",
+        "Explain a complex algorithm in under 2 minutes, but you can only use the simplest words (like 'thing' and 'do stuff').",
+        "Open up a random old project of yours, and critique your past self's code in front of the group.",
+        "Write a function or method that intentionally contains three bugs, then swap with someone and fix each other's code.",
+        "Create a commit with a humorous or embarrassing message and push it to a shared repo.",
+        "Pair program with someone, but only communicate with them using emojis for the next 10 minutes."
+    ]
+}
