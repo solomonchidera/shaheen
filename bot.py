@@ -1,3 +1,4 @@
+""" Defines a discord bot that listens to events"""
 import discord
 from discord.ext import commands
 import os
