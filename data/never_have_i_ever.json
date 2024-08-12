@@ -1,8 +1,8 @@
 {
-    "Questions" : [
+    "questions" : [
         "Never have I ever broken production.",
         "Never have I ever merged without waiting for tests to pass.",
-        "I have never rewritten my code so they circumvent the tests.",
+        "Never have I ever rewritten my code so they circumvent the tests.",
         "Never have I ever questioned if the test is actually useful.",
         "Never have I ever commited without testing hoping it will just work fine.",
         "Never have I ever closed a ticket without completely finishing everything because the last requirement was unlikely to see the light of day.",

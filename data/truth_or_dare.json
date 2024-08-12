@@ -1,5 +1,5 @@
 {
-    "truth" : [
+    "truths" : [
         "What is the worst bug you've ever introduced into production, and how did you fix it?",
         "Have you ever lied on your resume about your programming skills or experience? If so, what was it?",
         "What programming language do you secretly dislike but never admit publicly?",
@@ -12,7 +12,7 @@
         "Have you ever pretended to know a programming concept or tool that you actually didn't?"
     ],
     
-    "dare" : [
+    "dares" : [
         "Refactor a piece of your code without using the backspace or delete keys for 10 minutes.",
         "Write a “hello world” program in the most obscure programming language you know.",
         "Code something with your non-dominant hand for 5 minutes.",
