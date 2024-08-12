@@ -5,6 +5,21 @@ import random
 from utils.news_api import fetch_articles
 
 class Articles(commands.Cog):
+    """
+    Get a random or topic-specific IT article.
+
+    Parameters:
+    - interaction (discord.Interaction): The interaction object representing the user's interaction with the bot.
+    - topic (str, optional): The topic of the article. If not provided, a random article will be fetched.
+
+    Returns:
+    None
+
+    Raises:
+    None
+
+    """
+
     def __init__(self, bot):
         self.bot = bot
 
