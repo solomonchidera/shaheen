@@ -1,4 +1,7 @@
-""" Defines a discord bot that listens to events"""
+"""
+Main Entry point for shaheen bot that loads the cogs 
+and boot the bot
+"""
 import discord
 from discord.ext import commands
 import os
@@ -23,7 +26,7 @@ async def load_cogs():
 
 @bot.event
 async def on_ready():
-    print(f'Logged in as {bot.user.name} ({bot.user.id})')
+    print(f'Logged in as {bot.user.name} ({bot.user.id}).')
     await load_cogs()
 
     await bot.tree.sync()
