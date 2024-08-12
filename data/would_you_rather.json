@@ -1,54 +1,27 @@
 {
-    "Questions" :[
-          {
-            "question": "Would you rather always write code in a language you dislike or have to fix someone else's badly written code?",
-            "option1": "Write code in a language you dislike",
-            "option2": "Fix someone else's badly written code"
-          },
-          {
-            "question": "Would you rather work with a buggy legacy codebase or a poorly documented but new codebase?",
-            "option1": "Buggy legacy codebase",
-            "option2": "Poorly documented new codebase"
-          },
-          {
-            "question": "Would you rather debug code for hours without finding the issue or accidentally delete a day’s worth of work?",
-            "option1": "Debug code for hours",
-            "option2": "Accidentally delete a day's work"
-          },
-          {
-            "question": "Would you rather have no internet connection while coding or no access to Stack Overflow?",
-            "option1": "No internet connection",
-            "option2": "No access to Stack Overflow"
-          },
-          {
-            "question": "Would you rather code in a language with no syntax highlighting or one with an unpredictable linter?",
-            "option1": "No syntax highlighting",
-            "option2": "Unpredictable linter"
-          },
-          {
-            "question": "Would you rather work on a project with no version control or a project with frequent merge conflicts?",
-            "option1": "No version control",
-            "option2": "Frequent merge conflicts"
-          },
-          {
-            "question": "Would you rather have to explain your code to a non-technical person or explain a bug to your boss?",
-            "option1": "Explain code to a non-technical person",
-            "option2": "Explain a bug to your boss"
-          },
-          {
-            "question": "Would you rather deal with a production issue during a live demo or have your code fail right before a major deadline?",
-            "option1": "Production issue during live demo",
-            "option2": "Code fail right before major deadline"
-          },
-          {
-            "question": "Would you rather have an IDE that crashes frequently or one that auto-corrects your code incorrectly?",
-            "option1": "IDE that crashes frequently",
-            "option2": "IDE that auto-corrects incorrectly"
-          },
-          {
-            "question": "Would you rather code with a noisy mechanical keyboard or a slow, unresponsive one?",
-            "option1": "Noisy mechanical keyboard",
-            "option2": "Slow, unresponsive keyboard"
-          }
+    "questions" : [
+            "Would you rather always write code in a language you dislike or have to fix someone else's badly written code?",
+            "Would you rather work on a project with no documentation or one with inconsistent naming conventions?",
+            "Would you rather work with a buggy legacy codebase or a poorly documented but new codebase?",
+            "Would you rather have to write code in a noisy, crowded office or a quiet, isolated one?",
+            "Would you rather debug code for hours without finding the issue or accidentally delete a day’s worth of work?",
+            "Would you rather have no internet connection while coding or no access to Stack Overflow?",
+            "Would you rather code in a language with no syntax highlighting or one with an unpredictable linter?",
+            "Would you rather work on a project with no version control or a project with frequent merge conflicts?",
+            "Would you rather have to explain your code to a non-technical person or explain a bug to your boss?",
+            "Would you rather deal with a production issue during a live demo or have your code fail right before a major deadline?",
+            "Would you rather have an IDE that crashes frequently or one that auto-corrects your code incorrectly?",
+            "Would you rather code with a noisy mechanical keyboard or a slow, unresponsive one?",
+            "Would you rather work on a project with no tests or one with tests that always fail?",
+            "Would you rather have to write code on a tiny laptop screen or a large monitor with a low resolution?",
+            "Would you rather work on a project with no comments or one with comments that are always out of date?",
+            "Would you rather have to write code on a slow, outdated computer or a fast computer with a loud fan?",
+            "Would you rather work on a project with no code reviews or one with code reviews that always take hours?",
+            "Would you rather have to write code in a language you don’t know well or one with a steep learning curve?",
+            "Would you rather work on a project with no deadlines or one with constantly changing deadlines?",
+            "Would you rather have to write code in a language with no libraries or one with libraries that are poorly documented?",
+            "Would you rather work on a project with no meetings or one with meetings that always run over time?",
+            "Would you rather have to write code in a language with no community support or one with a toxic community?",
+            "Would you rather work on a project with no code reviews or one with code reviews that are overly critical?"
     ]
 }
