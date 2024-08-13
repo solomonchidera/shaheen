@@ -4,10 +4,19 @@ import random
 import json
 from discord import app_commands
 
+
 class Games(commands.Cog):
+    """
+        Games is a discord bot cog for playing some games.
+    """
     def __init__(self, bot):
+        """initialization fucntion
+
+        Args:
+            bot (commands.Bot): intance of the bot running the Cog.
+        """
         self.bot = bot
-        
+
         # Load Truth or Dare data
         with open('data/truth_or_dare.json', 'r') as f:
             data = json.load(f)
@@ -39,11 +48,23 @@ class Games(commands.Cog):
 
     @app_commands.command(name="truth", description="Get a truth question.")
     async def truth(self, interaction: discord.Interaction):
+        """
+            Truth command for getting a truth question for (truth/dare) game.
+
+            Args:
+                interaction (discord.Interaction): a discord interaction.
+        """
         truth_question = self.get_random_truth()
         await self.send_truth_or_dare(interaction, truth_question, is_truth=True)
 
     @app_commands.command(name="dare", description="Get a dare challenge.")
     async def dare(self, interaction: discord.Interaction):
+        """
+            Dare command for getting a dare for (truth/dare) game.
+
+            Args:
+                interaction (discord.Interaction): a discord interaction.
+        """
         dare_challenge = self.get_random_dare()
         await self.send_truth_or_dare(interaction, dare_challenge, is_truth=False)
 
@@ -81,6 +102,12 @@ class Games(commands.Cog):
 
     @app_commands.command(name="neverhaveiever", description="Get a 'Never Have I Ever' question.")
     async def never_have_i_ever(self, interaction: discord.Interaction):
+        """
+            Never have I ever command for never Have I ever Game.
+
+            Args:
+                interaction (discord.Interaction): a discord interaction.
+        """
         question = self.get_random_never_have_i_ever()
         await self.send_never_have_i_ever(interaction, question)
 
@@ -112,6 +139,12 @@ class Games(commands.Cog):
 
     @app_commands.command(name="wouldyourather", description="Get a 'Would You Rather' question.")
     async def would_you_rather(self, interaction: discord.Interaction):
+        """
+            would you rather command for would you rather Game.
+
+            Args:
+                interaction (discord.Interaction): a discord interaction.
+        """
         question = self.get_random_would_you_rather()
         await self.send_would_you_rather(interaction, question)
 
@@ -141,5 +174,11 @@ class Games(commands.Cog):
 
         await interaction.response.send_message(content, view=view)
 
+
 async def setup(bot: commands.Bot):
+    """ loads the challange Cog into the bot.
+
+    Args:
+        bot (command.Bot): instance of the bot.
+    """
     await bot.add_cog(Games(bot))
