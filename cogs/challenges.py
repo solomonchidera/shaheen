@@ -6,12 +6,24 @@ import random
 
 LEETCODE_API_URL = "https://leetcode.com/graphql"
 
+
 class Challenges(commands.Cog):
-    def __init__(self, bot):
+    """ Challanges is a discord bot Cog for the /leetcode command
+        that gives you a coding challange.
+    """
+    def __init__(self, bot: commands.Bot) -> None:
         self.bot = bot
 
     @app_commands.command(name="leetcode", description="Fetch a random coding challenge from LeetCode")
-    async def leetcode(self, interaction: discord.Interaction, difficulty: str = None):
+    async def leetcode(self, interaction: discord.Interaction, difficulty: str = None) -> None:
+        """
+            Leetcode command that makes a request to the leetcode API.
+
+            Args:
+                interaction (discord.Interaction): a discord interaction
+                diffeculty (str): argument for the difficulty of the challange
+        """
+
         # GraphQL query to fetch problems
         query = """
         query getProblems($categorySlug: String, $filters: QuestionListFilterInput) {
@@ -27,7 +39,7 @@ class Challenges(commands.Cog):
             }
         }
         """
-        
+
         # Define the filters based on difficulty
         variables = {
             "categorySlug": "",
@@ -66,5 +78,11 @@ class Challenges(commands.Cog):
         else:
             await interaction.response.send_message("Failed to fetch challenges from LeetCode. Please try again later.")
 
-async def setup(bot):
+
+async def setup(bot: commands.Bot) -> None:
+    """ loads the challange Cog into the bot.
+
+    Args:
+        bot (command.Bot): instance of the bot.
+    """
     await bot.add_cog(Challenges(bot))
