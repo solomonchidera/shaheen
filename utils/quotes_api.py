@@ -20,7 +20,7 @@ def get_quote() -> str:
         data = json.loads(decoded_response)
 
         # getting quote in the right format
-        quote = f"{data[0]['q']}\n - {data[0]['a']}"
+        quote = f" >>> ### {data[0]['q']}\n -{data[0]['a']}"
         return quote
 
     except requests.RequestException as e:
