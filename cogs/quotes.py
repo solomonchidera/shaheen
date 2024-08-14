@@ -1,8 +1,10 @@
-"""defines commands for the qoutes functionality"""
+"""
+defines commands for the qoutes functionality
+"""
 from discord.ext import commands
 from discord import app_commands
 import discord
-from utils.quotes import get_quote
+from utils.quotes_api import get_quote
 
 
 class Quotes(commands.Cog):
