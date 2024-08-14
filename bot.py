@@ -19,7 +19,7 @@ async def load_cogs():
      await bot.load_extension('cogs.games')
      await bot.load_extension('cogs.challenges')
      await bot.load_extension('cogs.articles')
-#     await bot.load_extension('cogs.youtube')
+     await bot.load_extension('cogs.youtube')
 #     await bot.load_extension('cogs.projects')
 #     await bot.load_extension('cogs.memes')
 #     await bot.load_extension('cogs.quotes')
