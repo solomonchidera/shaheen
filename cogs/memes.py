@@ -4,7 +4,9 @@ from discord import app_commands
 import discord
 from utils.meme_api import get_meme
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 class Memes(commands.Cog):
     """A class fro memes command
@@ -34,8 +36,11 @@ class Memes(commands.Cog):
             interaction (discord.interaction): command interaction object.
             content (str): content returned by the command.
         """
-        new_meme_button = discord.ui.button(label='New Meme😜',
+        new_meme_button = discord.ui.Button(label='New Meme😜',
                                             style=discord.ButtonStyle.primary)
+        invite_button = discord.ui.Button(label="Invite",
+                                        url=os.getenv('INVITE_LINK'),
+                                        style=discord.ButtonStyle.link)
 
         async def new_meme_callback(interaction: discord.Interaction):
             """Nested recursive function to handle button callback.
@@ -51,9 +56,7 @@ class Memes(commands.Cog):
 
         view = discord.ui.View()
         view.add_item(new_meme_button)
-        view.add_item(discord.ui.Button(label="Invite",
-                                        url=os.getenv('INVITE_LINK'),
-                                        style=discord.ButtonStyle.link))
+        view.add_item(invite_button)
 
         await interaction.response.send_message(content, view=view)
 
