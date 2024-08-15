@@ -17,7 +17,7 @@ class Memes(commands.Cog):
                           description='A meme to light up your day')
     async def meme_command(self, interaction: discord.Interaction):
         """defines and set up the 'meme' command that get's a meme to user.
- 
+
         Args:
             interaction (discord.Interaction): object for interacting with
             commands.
@@ -25,7 +25,9 @@ class Memes(commands.Cog):
         meme_link = get_meme()
         await self.send_meme(interaction, meme_link)
 
-    async def send_meme(self, interaction: discord.Interaction, content: str) -> None:
+    async def send_meme(self,
+                        interaction: discord.Interaction,
+                        content: str) -> None:
         """prepare the command response and send it as a response
             also defines a button and a callback for the command.
         Args:
@@ -34,6 +36,7 @@ class Memes(commands.Cog):
         """
         new_meme_button = discord.ui.button(label='New Meme😜',
                                             style=discord.ButtonStyle.primary)
+
         async def new_meme_callback(interaction: discord.Interaction):
             """Nested recursive function to handle button callback.
                it graps a new meme and send it back to user.
@@ -48,9 +51,12 @@ class Memes(commands.Cog):
 
         view = discord.ui.View()
         view.add_item(new_meme_button)
-        view.add_item(discord.ui.Button(label="Invite", url=os.getenv('INVITE_LINK'), style=discord.ButtonStyle.link))
+        view.add_item(discord.ui.Button(label="Invite",
+                                        url=os.getenv('INVITE_LINK'),
+                                        style=discord.ButtonStyle.link))
 
         await interaction.response.send_message(content, view=view)
+
 
 async def setup(bot):
     """ loads the memes Cog into the bot.
