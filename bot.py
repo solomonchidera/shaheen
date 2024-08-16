@@ -24,6 +24,7 @@ async def load_cogs():
     await bot.load_extension('cogs.projects')
     await bot.load_extension('cogs.memes')
     await bot.load_extension('cogs.readme')
+    await bot.load_extension('cogs.about')
 
 
 @bot.event
