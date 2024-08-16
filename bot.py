@@ -32,6 +32,17 @@ async def on_ready():
     print(f'Logged in as {bot.user.name} ({bot.user.id}).')
     await load_cogs()
 
+    # custom status
+    """
+    Below script could be twicked to the prefered state of the bot which could be
+    dnd
+    idle
+    invisible
+    online which is default without the line
+    """
+    await bot.change_presence(status=discord.Status.dnd, activity=discord.Game(name="Resting..."))
+
+    # custom script end
     await bot.tree.sync()
     print(f"slash commands synced and registered for {bot.user}.")
 
