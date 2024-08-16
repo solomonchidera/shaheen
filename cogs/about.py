@@ -11,8 +11,8 @@ class About(commands.Cog):
     async def about(self, interaction: discord.Interaction):
         # Embed with bot information
         embed = discord.Embed(
-            title="About Project Idea Bot",
-            description="I'm a bot that generates project ideas for developers!",
+            title="About Shaheen Bot",
+            description="I'm a bot that offer games for developers and other cools stuff to stay productive!",
             color=discord.Color.blue()
         )
         embed.add_field(name="Version", value="0.0.1", inline=True)
@@ -35,8 +35,7 @@ class AboutView(discord.ui.View):
         super().__init__()
 
         # Add buttons
-        self.add_item(discord.ui.Button(label="Privacy Policy", style=discord.ButtonStyle.link, url=os.getenv('PP')))
-        self.add_item(discord.ui.Button(label="Terms of Service", style=discord.ButtonStyle.link, url=os.getenv('TOS')))
+        self.add_item(discord.ui.Button(label="Privacy Policy", style=discord.ButtonStyle.link, url='https://shaheen-toc.web.app/'))
         self.add_item(discord.ui.Button(label="Invite", style=discord.ButtonStyle.link, url=os.getenv('INVITE_LINK')))
 
 async def setup(bot: commands.Bot):

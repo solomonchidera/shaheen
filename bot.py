@@ -16,7 +16,7 @@ bot = commands.Bot(command_prefix="/", intents=discord.Intents.all())
 
 # Load cogs
 async def load_cogs():
-     await bot.load_extension('cogs.games')
+    await bot.load_extension('cogs.games')
 #     await bot.load_extension('cogs.challenges')
      await bot.load_extension('cogs.articles')
      await bot.load_extension('cogs.youtube')
