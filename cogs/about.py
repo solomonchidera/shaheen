@@ -23,7 +23,7 @@ class About(commands.Cog):
                                                   "This bot uses Google's Gemini AI to generate creative project ideas."
                                                   "Use /about to get a quick guide and description for shaheen bot"
                                                   "Use /article to get a random tech article from internet with an optional 'topic' to get a specific result"
-                                                  "Use /dare to get a random developer dares", inline=False)
+                                                  "Use /dare to get a random developer dares", inline=True)
 
         # Create a view with buttons
         view = AboutView()
