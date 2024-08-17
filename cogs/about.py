@@ -19,11 +19,15 @@ class About(commands.Cog):
         embed.add_field(name="Creators", value="so1omon & y4h14", inline=True)
         embed.add_field(name="Library", value="discord.py", inline=True)
         embed.add_field(name="Commands", value="/about, /article, /dare, /neverhaveiever, /project, /quote, /truth, /wouldyourather, /youtube", inline=False)
-        embed.add_field(name="Description", value="Use /project to get a new project idea with estimated duration. "
-                                                  "This bot uses Google's Gemini AI to generate creative project ideas."
-                                                  "Use /about to get a quick guide and description for shaheen bot"
-                                                  "Use /article to get a random tech article from internet with an optional 'topic' to get a specific result"
-                                                  "Use /dare to get a random developer dares", inline=False)
+        embed.add_field(name="About", value="Use /about to get a quick guide and description for shaheen bot", inline=False)
+        embed.add_field(name="Article", value="Use /article to get a random tech article from internet with an optional 'topic' to get a specific result", inline=False)
+        embed.add_field(name="Dare", value="Use /dare to get a random developer dares", inline=False)
+        embed.add_field(name="Neverhaveiever", value="Use /neverhaveiever to get neverhaveiever questions", inline=False)
+        embed.add_field(name="Project", value="Use /project to get project suggestions with estimated finish time", inline=False)
+        embed.add_field(name="Quote", value="Use /quote to get a random motivational quote to booost yourself", inline=False)
+        embed.add_field(name="Truth", value="Use /truth to get a random truth question that you must answer honestly", inline=False)
+        embed.add_field(name="Wouldyourather", value="Use /wouldyourather to get a would you rather question", inline=False)
+        embed.add_field(name="Youtube", value="Use /youtube to fetch a youtube video specifically tech from youtube and watch", inline=False)
 
         # Create a view with buttons
         view = AboutView()
