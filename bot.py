@@ -40,7 +40,7 @@ async def on_ready():
     invisible
     online which is default without the line
     """
-    await bot.change_presence(status=discord.Status.idle, activity=discord.Game(name="Resting..."))
+    await bot.change_presence(status=discord.Status.dnd, activity=discord.Game(name="chilling"))
 
     # custom script end
     await bot.tree.sync()
