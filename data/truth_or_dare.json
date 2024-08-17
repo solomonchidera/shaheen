@@ -12,7 +12,7 @@
         "Have you ever pretended to know a programming concept or tool that you actually didn't?",
         "Do you have a co-worker crush?"
     ],
-    
+
     "dares" : [
         "Refactor a piece of your code without using the backspace or delete keys for 10 minutes.",
         "Write a “hello world” program in the most obscure programming language you know.",
@@ -20,6 +20,7 @@
         "Deploy a fake [all systems down] message to your team chat and see their reaction.",
         "Write a short piece of code using only single-letter variable names.",
         "Explain a complex algorithm in under 2 minutes, but you can only use the simplest words (like 'thing' and 'do stuff').",
+        "I dare you to close your browser tabs",
         "Open up a random old project of yours, and critique your past self's code in front of the group.",
         "Write a function or method that intentionally contains three bugs, then swap with someone and fix each other's code.",
         "Create a commit with a humorous or embarrassing message and push it to a shared repo.",
