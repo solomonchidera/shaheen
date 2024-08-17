@@ -77,7 +77,7 @@ class NewProjectButton(discord.ui.Button):
         # Fetch a new project idea using the function passed during initialization
         project_idea, estimated_duration = await self.fetch_project_idea()
         embed = discord.Embed(
-            title="🚀 New Project Idea",
+            title="‼️ New Project Idea",
             description=project_idea,
             color=discord.Color.blue()
         )
