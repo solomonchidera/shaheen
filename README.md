@@ -1,6 +1,8 @@
 # Shaheen 🦅
 
-A Bot by developers for developers.
+> A Bot by developers for developers.
+
+Shaheen is a discord bot built on discord.py that offers games and utilities to keep developers engaged and productive.
 
 ## Getting Started
 
