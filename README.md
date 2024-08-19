@@ -19,6 +19,8 @@ Add to your server: [Invite Link](https://discord.com/oauth2/authorize?client_id
     Use /dare to get a random developer dares.
 ### neverhaveiever
     Use /neverhaveiever to get neverhaveiever questions.
+### meme
+    Use /meme to get a random funny tech meme
 ### project
     Use /project to get project suggestions with estimated finish time.
 ### quote
