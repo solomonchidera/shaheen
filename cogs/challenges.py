@@ -30,7 +30,7 @@ class Challenges(commands.Cog):
         if response.status_code == 200:
             # Parse the HTML content
             soup = BeautifulSoup(response.content, 'html.parser')
-            
+
             # Find all problem links
             problems = soup.find_all('a', class_='title-cell__ZGos')
 
