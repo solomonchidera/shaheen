@@ -1,5 +1,5 @@
-! [Alt text] (https://github.com/solomonchidera/shaheen/blob/main/shaheen.png)
 # Shaheen 🦅
+![image](https://github.com/user-attachments/assets/5a17b864-1ad4-4853-af85-ea568ffc3fc8)
 
 > A Bot by developers for developers.
 
