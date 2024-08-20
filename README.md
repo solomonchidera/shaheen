@@ -1,4 +1,4 @@
-! [shaheen] (@shaheen.png)
+! [Alt text] (https://github.com/solomonchidera/shaheen/blob/main/shaheen.png)
 # Shaheen 🦅
 
 > A Bot by developers for developers.
