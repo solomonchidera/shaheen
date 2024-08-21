@@ -18,7 +18,7 @@ class About(commands.Cog):
         embed.add_field(name="Version", value="0.0.1", inline=True)
         embed.add_field(name="Creators", value="so1omon & y4h14", inline=True)
         embed.add_field(name="Library", value="discord.py", inline=True)
-        embed.add_field(name="Commands", value="/about, /article, /dare, /neverhaveiever, /project, /quote, /truth, /wouldyourather, /youtube", inline=False)
+        embed.add_field(name="Commands", value="/about, /article, /dare, /neverhaveiever, /meme, /project, /quote, /truth, /wouldyourather, /youtube", inline=False)
         embed.add_field(name="About", value="Use /about to get a quick guide and description for shaheen bot", inline=False)
         embed.add_field(name="Article", value="Use /article to get a random tech article from internet with an optional 'topic' to get a specific result", inline=False)
         embed.add_field(name="Dare", value="Use /dare to get a random developer dares", inline=False)
