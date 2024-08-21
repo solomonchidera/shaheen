@@ -26,6 +26,7 @@ class About(commands.Cog):
         embed.add_field(name="Neverhaveiever", value="Use /neverhaveiever to get neverhaveiever questions", inline=False)
         embed.add_field(name="Project", value="Use /project to get project suggestions with estimated finish time", inline=False)
         embed.add_field(name="Quote", value="Use /quote to get a random motivational quote to booost yourself", inline=False)
+        embed.add_field(name="Readme", value="Use /readme command to get templates for the readme page of your next project", inline=False)
         embed.add_field(name="Truth", value="Use /truth to get a random truth question that you must answer honestly", inline=False)
         embed.add_field(name="Wouldyourather", value="Use /wouldyourather to get a would you rather question", inline=False)
         embed.add_field(name="Youtube", value="Use /youtube to fetch a youtube video specifically tech from youtube and watch", inline=False)
