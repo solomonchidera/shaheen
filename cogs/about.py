@@ -22,6 +22,7 @@ class About(commands.Cog):
         embed.add_field(name="About", value="Use /about to get a quick guide and description for shaheen bot", inline=False)
         embed.add_field(name="Article", value="Use /article to get a random tech article from internet with an optional 'topic' to get a specific result", inline=False)
         embed.add_field(name="Dare", value="Use /dare to get a random developer dares", inline=False)
+        embed.add_field(name="Meme", value="Use /mame to get a coding meme that brightens your day", inline=False)
         embed.add_field(name="Neverhaveiever", value="Use /neverhaveiever to get neverhaveiever questions", inline=False)
         embed.add_field(name="Project", value="Use /project to get project suggestions with estimated finish time", inline=False)
         embed.add_field(name="Quote", value="Use /quote to get a random motivational quote to booost yourself", inline=False)
