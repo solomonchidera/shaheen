@@ -15,7 +15,7 @@ class About(commands.Cog):
             description="I'm a bot that offer games for developers and other cools stuff to stay productive!",
             color=discord.Color.blue()
         )
-        embed.add_field(name="Version", value="0.0.1", inline=True)
+        embed.add_field(name="Version", value="1.0.0", inline=True)
         embed.add_field(name="Creators", value="so1omon & y4h14", inline=True)
         embed.add_field(name="Library", value="discord.py", inline=True)
         embed.add_field(name="Commands", value="/about, /article, /dare, /neverhaveiever, /meme, /project, /quote, /readme, /truth, /wouldyourather, /youtube", inline=False)
