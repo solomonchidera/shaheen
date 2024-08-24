@@ -154,10 +154,10 @@ class Games(commands.Cog):
         new_question_button = discord.ui.Button(label="New Question", style=discord.ButtonStyle.success)
 
         async def option_1_callback(interaction: discord.Interaction):
-            await interaction.response.send_message("You voted for: Option 1!")
+            await interaction.response.send_message(f"{interaction.user} voted for: Option 1!")
 
         async def option_2_callback(interaction: discord.Interaction):
-            await interaction.response.send_message("You voted for: Option 2!")
+            await interaction.response.send_message(f"{interaction.user} voted for: Option 2!")
 
         async def new_question_callback(interaction: discord.Interaction):
             new_question = self.get_random_would_you_rather()
