@@ -131,10 +131,10 @@ class Games(commands.Cog):
         new_question_button = discord.ui.Button(label="New Question", style=discord.ButtonStyle.success)
 
         async def yes_callback(interaction: discord.Interaction):
-            await interaction.response.send_message("You answered: Yes!")
+            await interaction.response.send_message(f"{interaction.user} answered: I have!")
 
         async def no_callback(interaction: discord.Interaction):
-            await interaction.response.send_message("You answered: No!")
+            await interaction.response.send_message(f"{interaction.user} answered: I have Never!")
 
         async def new_question_callback(interaction: discord.Interaction):
             new_question = self.get_random_never_have_i_ever()
