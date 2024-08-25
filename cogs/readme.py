@@ -1,6 +1,7 @@
 from discord.ext import commands
 from discord import app_commands
 import discord
+from utils.db import DB
 
 
 class Readme(commands.Cog):
@@ -11,12 +12,21 @@ class Readme(commands.Cog):
         """
         self.bot = bot
 
-        with open('data/readme_template1.md', 'r') as f:
-            self.temp1 = f.read()
+        # Load Readme template 2
+        # with open('data/readme_template1.md', 'r') as f:
+        #     self.temp1 = f.read()
 
-        # Load Would You Rather data
-        with open('data/readme_template2.md', 'r') as f:
-            self.temp2 = f.read()
+        # Load Readme template 2
+        # with open('data/readme_template2.md', 'r') as f:
+        #     self.temp2 = f.read()
+
+        readme_db = DB(collection_name='Readme')
+
+        temp1_obj = readme_db.find_one({"temp1": {"$exists": True}})
+        temp2_obj = readme_db.find_one({"temp2": {"$exists": True}})
+
+        self.temp1 = temp1_obj['temp1']
+        self.temp2 = temp2_obj['temp2']
 
     @app_commands.command(name='readme',
                           description='templates for creating a readme file')
