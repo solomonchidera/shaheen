@@ -3,6 +3,7 @@ from discord.ext import commands
 import random
 import json
 from discord import app_commands
+from utils.db import DB
 
 
 class Games(commands.Cog):
@@ -18,18 +19,31 @@ class Games(commands.Cog):
         self.bot = bot
 
         # Load Truth or Dare data
-        with open('data/truth_or_dare.json', 'r') as f:
-            data = json.load(f)
-            self.truths = data["truths"]
-            self.dares = data["dares"]
+        # with open('data/truth_or_dare.json', 'r') as f:
+        #     data = json.load(f)
+        #     self.truths = data["truths"]
+        #     self.dares = data["dares"]
+        truth_db = DB(collection_name='Truth')
+
+        db_truths = truth_db.find_one({"truth_questions": {"$exists": True}})
+        db_dares = truth_db.find_one({"dare_questions": {"$exists": True}})
+
+        self.truths = db_truths['truth_questions']
+        self.dares = db_dares['dare_questions']
 
         # Load Never Have I Ever data
-        with open('data/never_have_i_ever.json', 'r') as f:
-            self.never_have_i_ever = json.load(f)["questions"]
+        # with open('data/never_have_i_ever.json', 'r') as f:
+        #     self.never_have_i_ever = json.load(f)["questions"]
+        never_db = DB(collection_name='NeverHaveIEver')
+        never_questions = never_db.find_one({"questions": {"$exists": True}})
+        self.never_have_i_ever = never_questions['questions']
 
         # Load Would You Rather data
-        with open('data/would_you_rather.json', 'r') as f:
-            self.would_you_rather = json.load(f)["questions"]
+        # with open('data/would_you_rather.json', 'r') as f:
+        #     self.would_you_rather = json.load(f)["questions"]
+        rather_db = DB(collection_name='WouldYouRather')
+        rather_questions = rather_db.find_one({"questions": {"$exists": True}})
+        self.would_you_rather = rather_questions['questions']
 
     def get_random_truth(self):
         return random.choice(self.truths)
