@@ -9,8 +9,8 @@ Shaheen is a discord bot built on discord.py that offers games and utilities to 
 
 Add to your server: [Invite Link](https://discord.com/oauth2/authorize?client_id=1271451731229802539&permissions=3146601199696&integration_type=0&scope=bot).
 
-## Version
-* Version 1.0.0
+## Versions
+> * Version 1.0.0 - lastest version
 
 ## Commands
 
