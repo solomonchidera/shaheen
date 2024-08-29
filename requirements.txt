@@ -11,11 +11,15 @@ charset-normalizer==3.3.2
 discord.py==2.4.0
 distro==1.9.0
 frozenlist==1.4.1
+google-ai-generativelanguage==0.6.6
 google-api-core==2.19.1
 google-api-python-client==2.140.0
 google-auth==2.33.0
 google-auth-httplib2==0.2.0
+google-generativeai==0.7.2
 googleapis-common-protos==1.63.2
+grpcio==1.65.4
+grpcio-status==1.62.3
 h11==0.14.0
 httpcore==1.0.5
 httplib2==0.22.0
@@ -23,9 +27,8 @@ httpx==0.27.0
 idna==3.7
 jiter==0.5.0
 multidict==6.0.5
-openai==1.40.6
 proto-plus==1.24.0
-protobuf==5.27.3
+protobuf==4.25.4
 pyasn1==0.6.0
 pyasn1_modules==0.4.0
 pydantic==2.8.2
