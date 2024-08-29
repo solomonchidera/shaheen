@@ -1,5 +1,6 @@
 # Shaheen 🦅
 ![image](https://github.com/user-attachments/assets/5a17b864-1ad4-4853-af85-ea568ffc3fc8)
+[Support](https://ko-fi.com/solomonchidera) • [Invite](https://discord.com/oauth2/authorize?client_id=1271451731229802539&permissions=3146601199696&integration_type=0&scope=bot) * [ToS](https://shaheen-toc.web.app/#terms-of-service) • [Privacy](https://shaheen-toc.web.app)
 
 > A Bot by developers for developers.
 
