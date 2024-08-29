@@ -5,6 +5,7 @@
 [Support](https://ko-fi.com/solomonchidera) • [Invite](https://discord.com/oauth2/authorize?client_id=1271451731229802539&permissions=3146601199696&integration_type=0&scope=bot) • [ToS](https://shaheen-toc.web.app/#terms-of-service) • [Privacy](https://shaheen-toc.web.app)
 
 </div>
+
 > A Bot by developers for developers.
 
 Shaheen is a discord bot built on discord.py that offers games and utilities to keep developers engaged and productive.
