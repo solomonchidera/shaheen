@@ -11,6 +11,7 @@ Add to your server: [Invite Link](https://discord.com/oauth2/authorize?client_id
 
 ## Versions
 > * Version 1.0.0 - lastest version
+> * Version 1.2.0 - under development
 
 ## Commands
 
