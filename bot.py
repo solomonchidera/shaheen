@@ -14,6 +14,16 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix="/", intents=discord.Intents.all())
 
+activities = [
+    discord.Activity(type=discord.ActivityType.playing, name="MW3")
+    discord.Activity(type=discord.ActivityType.playing, name="FIFA 23")
+    discord.Activity(type=discord.ActivityType.playing, name="Warzone")
+    discord.Activity(type=discord.ActivityType.watching, name="The Crow")
+    discord.Activity(type=discord.ActivityType.watching, name="Over the server")
+    discord.Activity(type=discord.ActivityType.listening, name="Lofi Beats")
+    discord.Activity(type=discord.ActivityType.listening, name="The Nights")
+        ]
+
 # Load cogs
 async def load_cogs():
     await bot.load_extension('cogs.games')
