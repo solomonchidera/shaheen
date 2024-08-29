@@ -37,7 +37,7 @@ async def load_cogs():
 #    await bot.load_extension('cogs.challenges')
 
 # Shuffle events here
-@tasks.loop(minutes=60)
+@tasks.loop(minutes=60) # 1hr
 async def change_activity():
     current_activity = random.choice(activities)
     await bot.change_presence(status=discord.Status.dnd, activity=current_activity)
@@ -56,7 +56,7 @@ async def on_ready():
     invisible
     online which is default without the line
     """
-    await bot.change_presence(status=discord.Status.dnd, activity=discord.Game(name="MW3"))
+    change_activity.start() # call change activity function
 
     # custom script end
     await bot.tree.sync()
