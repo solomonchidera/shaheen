@@ -36,6 +36,12 @@ async def load_cogs():
     await bot.load_extension('cogs.readme')
 #    await bot.load_extension('cogs.challenges')
 
+# Shuffle events here
+@tasks.loop(minutes=60)
+async def change_activity():
+    current_activity = random.choice(activities)
+    await bot.change_presence(status=discord.Status.dnd, activity=current_activity)
+    print(f"Bot statues updated to: {current_activity.name} ({current_activity.type.name})")
 
 @bot.event
 async def on_ready():
