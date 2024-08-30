@@ -3,9 +3,10 @@ Main Entry point for shaheen bot that loads the cogs
 and boot the bot
 """
 import discord
-from discord.ext import commands
+from discord.ext import commands, tasks
 import os
 from dotenv import load_dotenv
+import random
 
 load_dotenv()
 
@@ -37,7 +38,7 @@ async def load_cogs():
 #    await bot.load_extension('cogs.challenges')
 
 # Shuffle events here
-@discord.ext.tasks.loop(minutes=30) # 30minutes
+@tasks.loop(minutes=30) # 30minutes
 async def change_activity():
     current_activity = random.choice(activities)
     await bot.change_presence(status=discord.Status.dnd, activity=current_activity)
