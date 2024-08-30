@@ -3,9 +3,10 @@ Main Entry point for shaheen bot that loads the cogs
 and boot the bot
 """
 import discord
-from discord.ext import commands
+from discord.ext import commands, tasks
 import os
 from dotenv import load_dotenv
+import random
 
 load_dotenv()
 
@@ -15,13 +16,13 @@ intents.message_content = True
 bot = commands.Bot(command_prefix="/", intents=discord.Intents.all())
 
 activities = [
-    discord.Activity(type=discord.ActivityType.playing, name="MW3")
-    discord.Activity(type=discord.ActivityType.playing, name="FIFA 23")
-    discord.Activity(type=discord.ActivityType.playing, name="Warzone")
-    discord.Activity(type=discord.ActivityType.watching, name="The Crow")
-    discord.Activity(type=discord.ActivityType.watching, name="Over the server")
-    discord.Activity(type=discord.ActivityType.listening, name="Lofi Beats")
-    discord.Activity(type=discord.ActivityType.listening, name="The Nights")
+    discord.Game(name="MW3", platform="PS5")
+#    discord.Game(name="FIFA 23", platform="XBOX")
+#    discord.Game(name="Warzone")
+#    discord.Watching(name="The Crow")
+#    discord.Watching(name="Over the server")
+#    discord.Listening(name="Lofi Beats")
+#    discord.Listening(name="The Nights")
         ]
 
 # Load cogs
@@ -35,6 +36,13 @@ async def load_cogs():
     await bot.load_extension('cogs.memes')
     await bot.load_extension('cogs.readme')
 #    await bot.load_extension('cogs.challenges')
+
+# Shuffle events here
+@tasks.loop(minutes=30) # 30minutes
+async def change_activity():
+    current_activity = random.choice(activities)
+    await bot.change_presence(status=discord.Status.dnd, activity=current_activity)
+    print(f"Bot statues updated to: {current_activity.name} ({current_activity.type.name})")
 
 
 @bot.event
@@ -50,7 +58,7 @@ async def on_ready():
     invisible
     online which is default without the line
     """
-    await bot.change_presence(status=discord.Status.dnd, activity=discord.Game(name="MW3"))
+    change_activity.start() # call change activity function
 
     # custom script end
     await bot.tree.sync()
