@@ -18,7 +18,7 @@ bot = commands.Bot(command_prefix="/", intents=discord.Intents.all())
 activities = [
     discord.Game(name="MW3", platform="PS5")
     discord.Game(name="FIFA 24", platform="XBOX")
-#    discord.Game(name="Warzone")
+    discord.Game(name="Warzone")
 #    discord.Watching(name="The Crow")
 #    discord.Watching(name="Over the server")
 #    discord.Listening(name="Lofi Beats")
