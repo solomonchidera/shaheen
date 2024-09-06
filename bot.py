@@ -64,4 +64,4 @@ async def on_ready():
     await bot.tree.sync()
     print(f"slash commands synced and registered for {bot.user}.")
 
-bot.run(os.getenv('DISCORD_BOT_TOKEN'))
+bot.run(os.getenv('TOKEN'))

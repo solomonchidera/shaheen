@@ -5,6 +5,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Config:
-    DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN")
+    TOKEN = os.getenv("TOKEN")
     YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
-    # more below...
+    # ....
