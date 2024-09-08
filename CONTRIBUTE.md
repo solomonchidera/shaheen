@@ -7,3 +7,4 @@ First fork the repo, create a branch where you'll push your changes to, then mak
 #### **Things to know before contributing**
 * Python
 * Discord.py
+* Git 
