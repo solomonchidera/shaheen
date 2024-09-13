@@ -40,3 +40,5 @@ Add to your server: [Invite Link](https://discord.com/oauth2/authorize?client_id
     Use /wouldyourather to get a would you rather question.
 ### youtube
     Use /youtube to fetch a youtube video specifically tech from youtube and watch.
+
+## Developing Locally
