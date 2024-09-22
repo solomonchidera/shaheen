@@ -15,15 +15,6 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix="/", intents=discord.Intents.all())
 
-activities = [
-    discord.Game(name="MW3")
-    discord.Game(name="FIFA 24")
-    discord.Game(name="Warzone")
-#    discord.Watching(name="The Crow")
-#    discord.Watching(name="Over the server")
-#    discord.Listening(name="Lofi Beats")
-#    discord.Listening(name="The Nights")
-        ]
 
 # Load cogs
 async def load_cogs():
@@ -38,11 +29,11 @@ async def load_cogs():
 #    await bot.load_extension('cogs.challenges')
 
 # Shuffle events here
-@tasks.loop(minutes=30) # 30minutes
-async def change_activity():
-    current_activity = random.choice(activities)
-    await bot.change_presence(status=discord.Status.dnd, activity=current_activity)
-    print(f"Bot statues updated to: {current_activity.name} ({current_activity.type.name})")
+# @tasks.loop(minutes=5) # 30minutes
+#async def change_activity():
+#    current_activity = random.choice(activities)
+#    await bot.change_presence(status=discord.Status.dnd, activity=current_activity)
+#    print(f"Bot statues updated to: {current_activity.name} ({current_activity.type.name})")
 
 
 @bot.event
@@ -58,8 +49,8 @@ async def on_ready():
     invisible
     online which is default without the line
     """
-    change_activity.start() # call change activity function
-
+ #   change_activity.start() # call change activity function
+    await bot.change_presence(status=discord.Status.dnd, activity=discord.Game(name="COD Mobile"))
     # custom script end
     await bot.tree.sync()
     print(f"slash commands synced and registered for {bot.user}.")
