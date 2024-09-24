@@ -1,6 +1,6 @@
 """
 Main Entry point for shaheen bot that loads the cogs 
-and boot the bot
+and boots the bot
 """
 import discord
 from discord.ext import commands, tasks
