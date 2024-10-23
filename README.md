@@ -42,4 +42,4 @@ Add to your server: [Invite Link](https://discord.com/oauth2/authorize?client_id
     Use /youtube to fetch a youtube video specifically tech from youtube and watch.
 
 ## Developing Locally
-clone the repo
+clone the repo, create a virtual enviroment
