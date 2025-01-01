@@ -43,3 +43,5 @@ Add to your server: [Invite Link](https://discord.com/oauth2/authorize?client_id
 
 ## Developing Locally
 clone the repo, create a virtual enviroment
+
+## HAPPY NEW YEAR
